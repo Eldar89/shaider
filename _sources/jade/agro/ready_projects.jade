@@ -1,0 +1,30 @@
+|<?php 
+|  $part = array(
+|    'post_type' => 'ready_object', //Тип поста
+|    'posts_per_page' => -1,//Постов на одной странице
+|    'category_name' => 'ready_object_agro' //Категория постов
+|  );
+|?>
+
+section#ready_projects
+  .container-own
+    h3.header Выполненные работы
+    .projects
+      |<?php
+      |  $lastBlog = new WP_Query($part);
+      |  if( $lastBlog->have_posts() ):
+      |    while($lastBlog->have_posts() ): $lastBlog->the_post();
+      |?>
+      |     <?php $header = types_render_field( "name_readyobject", array('raw' => true) ); ?>
+      |     <?php $date = types_render_field( "year_readyobject", array('raw' => true) ); ?>
+      |     <?php $list_services = explode (';', types_render_field( 'def_readyobject', array('raw' => true) ) ); ?>
+      |     <?php $list_slider = explode (' ', types_render_field( 'photo_readyobject', array('raw' => true) ) ); ?>
+      .elem_projects
+        img(src!="<?php echo $list_slider[0]; ?>")
+        .toner
+        h3!="<?php echo $header; ?>"
+        a(href!="http://xn--e1aybc.kz/shaider/projects/#<?php echo $header; ?>").link перейти к работе
+      |<?php
+      |    endwhile;
+      |  endif;
+      |?>

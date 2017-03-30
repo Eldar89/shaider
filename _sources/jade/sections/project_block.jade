@@ -1,0 +1,62 @@
+|<?php 
+|  $part = array(
+|    'post_type' => 'ready_object', //Тип поста
+|    'posts_per_page' => -1,//Постов на одной странице
+|    'category_name' => 'ready_object' //Категория постов
+|  );
+|?>
+
+section#projects_block
+  .container-own
+    h3 Выполненные работы
+    |<?php
+    |  $lastBlog = new WP_Query($part);
+    |  if( $lastBlog->have_posts() ):
+    |    while($lastBlog->have_posts() ): $lastBlog->the_post();
+    |?>
+    |     <?php $header = types_render_field( "name_readyobject", array('raw' => true) ); ?>
+    |     <?php $date = types_render_field( "year_readyobject", array('raw' => true) ); ?>
+    |     <?php $list_services = explode (';', types_render_field( 'def_readyobject', array('raw' => true) ) ); ?>
+    |     <?php $list_slider = explode (' ', types_render_field( 'photo_readyobject', array('raw' => true) ) ); ?>
+    |     <?php $video_3d = types_render_field( '3d_readyobject', array('raw' => true) ); ?>
+    .elem_project
+        a(name!="<?php echo $header; ?>")
+        h4!="<?php the_title(); ?>"
+        .info
+          .slider
+            .slider_thumbnail
+              | <?php if ($video_3d): ?>
+              | <?php $poster_3d = types_render_field( 'poster_readyobject', array('raw' => true) );?>
+              .elem_lent.video_elem
+                a(href!="<?php echo $video_3d;?>" class="fancybox fancybox.iframe")
+                  img(src!="<?php echo $poster_3d;?>").poster
+                  img(src!="<?php echo get_template_directory_uri();?>/images/play.png").play_button
+              | <?php endif;?>
+              | <?php foreach( $list_slider as $elem_sl): ?>
+              .elem_lent
+                a(href!="<?php echo $elem_sl;?>" class="fancybox"): img(src!="<?php echo $elem_sl;?>")
+              | <?php endforeach;?>
+            .slider_elements
+              .slider_lent
+                | <?php if ($video_3d): ?>
+                | <?php $poster_3d = types_render_field( 'poster_readyobject', array('raw' => true) );?>
+                .elem_lent
+                  img(src!="<?php echo $poster_3d;?>")
+                | <?php endif;?>
+                | <?php foreach( $list_slider as $elem_sl): ?>
+                .elem_lent
+                  img(src!="<?php echo $elem_sl;?>")
+                | <?php endforeach;?>
+              .slider_buttons
+                img(src!="<?php echo get_template_directory_uri();?>/images/left_arrow.jpg").previous
+                img(src!="<?php echo get_template_directory_uri();?>/images/right_arrow.jpg").next
+          ul.text
+            h4!="<?php echo $header; ?>"
+            .date!="<?php echo $date; ?>"
+            | <?php foreach( $list_services as $elem): ?>
+            li!="<?php echo($elem);?>"
+            | <?php endforeach;?>
+    |<?php
+    |    endwhile;
+    |  endif;
+    |?>

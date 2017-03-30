@@ -1,0 +1,62 @@
+#about_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 100;
+
+  .container-own {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .closer {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    cursor: pointer;
+  }
+
+  h3 {
+    color: #77cd9c;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 35px;
+
+    &::after {
+      content: ' ';
+      display: block;
+      width: 95px;
+      height: 3px;
+      background: #77cd9c;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .text {
+    height: calc(95vh - 235px);
+    color: #292929;
+    font-size: 15px;
+    line-height: 22pt;
+  }
+
+  .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #77cd9c;
+  }
+
+  .mCSB_scrollTools .mCSB_draggerRail {
+    width: 4px;
+  }
+}

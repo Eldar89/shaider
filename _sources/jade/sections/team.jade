@@ -1,0 +1,41 @@
+|<?php 
+|  $args = array(
+|    'post_type' => 'teambuild', //Тип поста
+|    'posts_per_page' => -1,//Постов на одной странице
+|    'category_name' => 'team' //Категория постов
+|  );
+|?>
+
+section#team
+  header Команда
+  .container-own
+    .arrows
+      .line
+      .arrows_block
+        .arrow_left
+        .arrow_right
+      .line
+    .slider_team
+      |<?php
+      |  $lastBlog = new WP_Query($args);
+      |  if( $lastBlog->have_posts() ):
+      |    while($lastBlog->have_posts() ): $lastBlog->the_post();
+      |?>
+      |     <?php $avatar = types_render_field( "team_avatar", array('raw' => true) ); ?>
+      |     <?php $name = types_render_field( "team_name", array('raw' => true) ); ?>
+      |     <?php $def_status = types_render_field( "team_status", array('raw' => true) ); ?>
+      |     <?php $team_func = types_render_field( "team_func", array('raw' => true) ); ?>
+      |     <?php $team_num = types_render_field( "team_num", array('raw' => true) ); ?>
+      .slider_elem
+        img(src!="<?php echo $avatar; ?>").avatar
+        .name!="<?php echo $name; ?>"
+        .status Должность:
+        .status_info!="<?php echo $def_status; ?>"
+        .func Основные функции
+        .func_info!="<?php echo $team_func; ?>"
+        .contact Контакты
+        .contact_info!="<?php echo $team_num; ?>"
+      |<?php
+      |    endwhile;
+      |  endif;
+      |?>

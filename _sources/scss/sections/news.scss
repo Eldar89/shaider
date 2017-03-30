@@ -1,0 +1,51 @@
+#news {
+  background: url('images/bg_news.jpg') no-repeat center top;
+  padding-bottom: 50px;
+  background-size: cover;
+}
+
+#news .container-own {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#news header {
+  text-align: center;
+  padding-bottom: 35px;
+  padding-top: 55px;
+  color: #77cd9c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#news .insta_page {
+  color: #363636;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  padding-left: 15px;
+
+  span {
+    padding-left: 20px;
+  }
+}
+
+#news #instafeed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#news #instafeed .instafeed_elem {
+  width: calc(25% - 30px);
+  margin: 15px;
+
+  img {
+    width: 100%;
+  }
+}

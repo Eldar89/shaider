@@ -1,0 +1,96 @@
+#ready_projects {
+  background: #f0f0f0;
+  padding-top: 35px;
+  padding-bottom: 60px;
+
+  .header {
+    color: #2c2c2c;
+    font-size: 25px;
+    border-bottom: 2px solid #cdcfcf;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  .projects {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .elem_projects {
+      width: 360px;
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: 3px 3px 15px rgba(#1c1c1c, 0.3);
+      transform: scale(1);
+      transition: transform ease 0.3s;
+      margin-bottom: 30px;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+      }
+
+      .toner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#41494b, 0.25);
+      }
+
+      h3 {
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        color: #fff;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+        text-shadow: 2px 2px 0 rgba(#000, 0.45);
+      }
+
+      .link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(#77cd9c, 1);
+        width: 145px;
+        height: 32px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 2px 2px 0 rgba(#000, 0.25);
+        border-radius: 4px;
+        transition: width, height, background ease, ease, ease 0.3s, 0.3s, 0.3s;
+      }
+
+      &:hover {
+        .link {
+          width: 102%;
+          height: 102%;
+          background: rgba(#77cd9c, 0.5);
+        }
+      }
+    }
+  }
+
+  .text {
+    padding-top: 15px;
+  }
+}

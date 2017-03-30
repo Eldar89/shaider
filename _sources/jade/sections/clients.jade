@@ -1,0 +1,50 @@
+|<?php 
+|  $part = array(
+|    'post_type' => 'clients', //Тип поста
+|    'posts_per_page' => -1,//Постов на одной странице
+|    'category_name' => 'partner' //Категория постов
+|  );
+|?>
+
+|<?php 
+|  $client = array(
+|    'post_type' => 'clients', //Тип поста
+|    'posts_per_page' => -1,//Постов на одной странице
+|    'category_name' => 'client' //Категория постов
+|  );
+|?>
+
+section#clients
+  .container-own
+    header
+      .line
+      h3 Партнеры
+      .line
+    .clients_block
+      |<?php
+      |  $lastBlog = new WP_Query($part);
+      |  if( $lastBlog->have_posts() ):
+      |    while($lastBlog->have_posts() ): $lastBlog->the_post();
+      |?>
+      |     <?php $partner = types_render_field( "logo_clients", array('raw' => true) ); ?>
+      img(src!="<?php echo $partner; ?>").clients_elem
+      |<?php
+      |    endwhile;
+      |  endif;
+      |?>
+    header
+      .line
+      h3 Клиенты
+      .line
+    .clients_block
+      |<?php
+      |  $lastBlog = new WP_Query($client);
+      |  if( $lastBlog->have_posts() ):
+      |    while($lastBlog->have_posts() ): $lastBlog->the_post();
+      |?>
+      |     <?php $client = types_render_field( "logo_clients", array('raw' => true) ); ?>
+      img(src!="<?php echo $client; ?>").clients_elem
+      |<?php
+      |    endwhile;
+      |  endif;
+      |?>

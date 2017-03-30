@@ -1,0 +1,22 @@
+#footer {
+  background: #404040;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      color: #fff;
+      font-size: 13.5px;
+      text-transform: uppercase;
+    }
+
+    .icon {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}

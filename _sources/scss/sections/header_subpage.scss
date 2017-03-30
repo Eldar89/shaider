@@ -1,0 +1,40 @@
+#nedrouser {
+  background: url('images/bg_nedr.jpg') no-repeat;
+}
+
+#gos_sector {
+  background: url('images/bg_sector.jpg') no-repeat;
+}
+
+#building {
+  background: url('images/bg_building.jpg') no-repeat;
+}
+
+#agro {
+  background: url('images/bg_agro.jpg') no-repeat;
+}
+
+.header_subPage {
+  height: 280px;
+  display: flex;
+  align-items: center;
+
+  h3 {
+    color: #fff;
+    font-size: 35px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 2px 2px 0 rgba(#000, 0.5);
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    &::after {
+      content: ' ';
+      display: block;
+      margin-top: 20px;
+      width: 155px;
+      height: 5px;
+      background: #77cd9c;
+    }
+  }
+}

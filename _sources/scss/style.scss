@@ -1,25 +1,57 @@
-@import 
+/*
+Theme Name: Shaider theme
+Version: 1.0
+*/
+
+@import
   'sass/_susy.scss',
   'sections/reset.scss',
   'sections/mail';
-$susy: (
-  columns: 12,
-  gutters: 1/2,
-  math: fluid,
-  gutter-position: outside,
-);
 
 $container: 1170px;
 $container-float: 100%;
 
-.container-float{
-  @include container($container-float);
+* {
+  box-sizing: border-box;
 }
 
-.container{
-  @include container($container);
-}  
-
-.test{
-  @include span(6);	
+body {
+  min-width: 1170px;
+  font-family: 'Roboto', sans-serif;
+  background: #ccc;
 }
+
+b {
+  font-weight: 700;
+}
+
+.container-own {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  position: relative;
+}
+
+@import
+  'sections/menu',
+  'sections/main',
+  'sections/pref',
+  'sections/services',
+  'sections/news',
+  'sections/clients',
+  'sections/projects',
+  'sections/feedback',
+  'sections/serts',
+  'sections/team',
+  'sections/map',
+  'sections/footer',
+  'sections/about_modal',
+  'sections/header_subpage',
+  'sections/content_subpage',
+  'sections/another_page',
+  'sections/ready_projects',
+  'sections/project_block',
+  'sections/services_header',
+  'sections/slider_services',
+  'sections/toTop';

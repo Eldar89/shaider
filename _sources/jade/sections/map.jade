@@ -1,0 +1,35 @@
+#map_contact
+  a(name="contact")
+  #map_contact_map
+  header
+    .container-own
+      .wrap
+        .contant_wrap
+          img(src!="<?php echo get_template_directory_uri();?>/images/geo_contact.png")
+          .info
+            h3 Адрес:
+            p г. Караганда ул. Кривогуза 39.
+        .contant_wrap
+          img(src!="<?php echo get_template_directory_uri();?>/images/phone_contact.png")
+          .info
+            h3 Телефоны:
+            .num!="+7 (700) 600 10 10"
+            .num!="+7 (700) 779 29 49"
+            .num!="+7 (7212) 79 29 49"
+        .contant_wrap
+          img(src!="<?php echo get_template_directory_uri();?>/images/phone_contact.png")
+          .info
+            h3 E-mail:
+            a(href="mailto:info@gmshader@mail.ru") 792949@mail.ru
+            p.text!="Хотите работать в нашей компании? <br> Отправьте ваше резюме на почту"
+  .form_contact
+    .wrap
+      h3 остались вопросы ?
+      h4 наш менеджер свяжется с вами
+      form
+        label#name_contact
+          input(type="text" required placeholder="Имя")
+        label#telephone_contact
+          input(type="tel" required placeholder="Телефон")
+        textarea#textarea_contact
+        input(type="submit" value="Отправить")

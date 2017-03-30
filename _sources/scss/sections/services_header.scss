@@ -1,0 +1,51 @@
+#services_header {
+  height: 310px;
+  background: url('images/bg_services.jpg') no-repeat;
+
+  h3 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #9ba09e;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  .slider_lent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .slider_elem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 175px;
+      cursor: pointer;
+
+      &.active {
+        h4 {
+          color: #77cd9c;
+          border-bottom: 2px dotted #77cd9c;
+        }
+      }
+
+      h4 {
+        font-size: 17px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Open Sans Condensed', sans-serif;
+        border-bottom: 2px dotted #fff;
+        font-weight: 700;
+        margin-left: 15px;
+        padding-bottom: 5px;
+        line-height: 18pt;
+      }
+    }
+  }
+}

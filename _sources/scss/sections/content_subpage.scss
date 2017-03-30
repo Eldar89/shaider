@@ -1,0 +1,37 @@
+.subPage_content {
+  background: #f0f0f0;
+}
+
+.subPage_content .wrap_content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.subPage_content .info_block_left,
+.subPage_content .info_block_right {
+  width: 48%;
+}
+
+.subPage_content h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2c2c2c;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 25px;
+  line-height: 25px;
+}
+
+.subPage_content ul {
+  padding-bottom: 45px;
+  list-style-type: disc;
+  list-style-position: inside;
+
+  li {
+    color: #2c2c2c;
+    font-size: 15px;
+    padding-bottom: 5px;
+    line-height: 20px;
+  }
+}

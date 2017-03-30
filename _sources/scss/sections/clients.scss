@@ -1,0 +1,46 @@
+#clients {
+  background: url('images/bg_clients.jpg') no-repeat center top;
+  background-size: cover;
+  padding-top: 55px;
+}
+
+#clients header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 75px;
+
+  .line {
+    height: 1px;
+    width: 400px;
+    background: #747474;
+  }
+
+  h3 {
+    color: #77cd9c;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+#clients .clients_block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 65px;
+
+  img {
+    width: calc(18% - 30px);
+    margin: 15px;
+    transform: scale(1);
+    transition: transform ease 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

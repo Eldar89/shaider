@@ -1,0 +1,43 @@
+#pref {
+  background: url('images/bg_pref.jpg') no-repeat center -63px;
+  padding-top: 65px;
+  padding-bottom: 30px;
+}
+
+#pref header {
+  text-align: center;
+  padding-bottom: 85px;
+}
+
+#pref footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pref footer li {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .info {
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 50px;
+  }
+
+  h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #77cd9c;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 21pt;
+  }
+}

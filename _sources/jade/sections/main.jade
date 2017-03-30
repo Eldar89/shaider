@@ -1,0 +1,24 @@
+section#main
+  a(name="main")
+  video(autoplay loop src!="<?php echo get_template_directory_uri();?>/bg.mp4")
+  .shadow
+  .container-own
+    .wrap
+      .info
+        img(src!="<?php echo get_template_directory_uri();?>/images/main_text.png")
+        .form
+          img(src!="<?php echo get_template_directory_uri();?>/images/consult.png")
+          form
+            label#name_label
+              input(type="text" id="name_form" required placeholder="Ваше имя")
+            label#tel_label
+              input(type="tel" id="tel_form" required placeholder="Телефон")
+            label#mail_label
+              input(type="mail" id="email_form" required placeholder="E-mail")
+            footer
+              p Наш специалист свяжется с Вами и ответит на все вопросы.
+              input(type="submit" id ="submit_form" value="Отправить")
+      .about
+        img(src!="<?php echo get_template_directory_uri();?>/images/about.png")
+      .scroll
+        img(src!="<?php echo get_template_directory_uri();?>/images/scroll.png")

@@ -1,0 +1,20 @@
+|<?php /*
+|  Template Name: Услуги
+|*/?>
+
+doctype html
+html(lang!="RU-ru")
+  head
+    include sections/header.jade
+  body
+    a(name="topSite")
+    include sections/menu.jade
+    include sections/header_services.jade
+    include sections/slider_services.jade
+    include sections/feedback_sub.jade
+    include sections/fix_menu.jade
+    script!="window.servicesPage = true"
+    script(src!="<?php echo get_template_directory_uri();?>/libs/jquery/dist/jquery.min.js")
+    script(src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+    script(src!="<?php echo get_template_directory_uri();?>/bundle.js")
+    include sections/footer_block.jade

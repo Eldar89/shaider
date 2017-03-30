@@ -1,0 +1,102 @@
+#team {
+  padding-top: 45px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  background: url('images/bg_team.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+#team header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #77cd9c;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+#team .arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+#team .arrows .line {
+  height: 1px;
+  width: 400px;
+  background: #747474;
+}
+
+#team .arrows .arrows_block {
+  display: flex;
+}
+
+#team .arrows .arrow_left {
+  content: ' ';
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-right: 18px;
+  cursor: pointer;
+  background: url('images/arrow_unhover.png') no-repeat center center;
+
+  &:hover {
+    background: url('images/arrow_hover.png') no-repeat center center;
+    transform: scaleX(-1);
+  }
+}
+
+#team .arrows .arrow_right {
+  content: ' ';
+  display: block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background: url('images/arrow_unhover.png') no-repeat center center;
+  transform: scaleX(-1);
+
+  &:hover {
+    background: url('images/arrow_hover.png') no-repeat center center;
+    transform: scaleX(1);
+  }
+}
+
+#team .slider_team .slider_elem {
+  width: 291px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  text-align: center;
+
+  .avatar {
+    border-radius: 50%;
+    margin-bottom: 25px;
+  }
+
+  .name {
+    color: #77cd9c;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .status,
+  .func,
+  .contact {
+    font-size: 15px;
+    padding-bottom: 13px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .status_info,
+  .func_info,
+  .contact_info {
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #fff;
+  }
+}

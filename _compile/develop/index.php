@@ -119,7 +119,7 @@
             <li><img src="<?php echo get_template_directory_uri();?>/images/4_pref.png" class="icon">
               <div class="info">
                 <h3>Экономия</h3>
-                <p>Новейшее оборудование позволяет нашим клиентам сокращать сроки реализации проектов до 10 раз  без потери качества!</p>
+                <p>Новейшее оборудование позволяет нашим клиентам сокращать сроки реализации проектов до 10 раз, без потери качества!</p>
               </div>
             </li>
             <li><img src="<?php echo get_template_directory_uri();?>/images/5_pref.png" class="icon">

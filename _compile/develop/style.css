@@ -1499,7 +1499,6 @@ b {
       #services_header .slider_lent .slider_elem h4 {
         font-size: 17px;
         color: #fff;
-        text-transform: uppercase;
         font-family: 'Open Sans Condensed', sans-serif;
         border-bottom: 2px dotted #fff;
         font-weight: 700;
@@ -1514,12 +1513,13 @@ b {
   padding-top: 40px; }
   #slider_services .slider_services .slider_elem_content h3 {
     color: #313131;
-    text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
     font-size: 25px;
     padding-bottom: 40px;
     width: 100%; }
+  #slider_services .slider_services .slider_elem_content h4 {
+    padding-bottom: 40px; }
   #slider_services .slider_services .slider_elem_content .wrap_info {
     display: flex;
     justify-content: space-between;
@@ -1559,16 +1559,15 @@ b {
         max-height: 100%;
         max-width: 100%;
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%); }
+        transform: translate(-50%, -50%); }
       #slider_services .slider_services .slider_elem_content .device .slider_elem_inner h4 {
         font-weight: 700;
         font-size: 15px;
         color: #313131;
         height: 75px;
-        padding-top: 15px;
-        text-transform: capitalize; }
+        padding-top: 15px; }
 
 #toTop {
   position: fixed;

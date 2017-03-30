@@ -7,12 +7,15 @@
 
   h3 {
     color: #313131;
-    text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
     font-size: 25px;
     padding-bottom: 40px;
     width: 100%;
+  }
+
+  h4 {
+    padding-bottom: 40px;
   }
 
   .wrap_info {
@@ -64,9 +67,9 @@
         max-height: 100%;
         max-width: 100%;
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
       }
 
       h4 {
@@ -75,7 +78,6 @@
         color: #313131;
         height: 75px;
         padding-top: 15px;
-        text-transform: capitalize;
       }
     }
   }

@@ -40,7 +40,7 @@
         </div>
       </footer>
     </section>
-    <?php 
+    <?php
      $part = array(
        'post_type' => 'ready_object', //Тип поста
        'posts_per_page' => -1,//Постов на одной странице
@@ -56,7 +56,7 @@
         ?>
             <?php $header = types_render_field( "name_readyobject", array('raw' => true) ); ?>
             <?php $date = types_render_field( "year_readyobject", array('raw' => true) ); ?>
-            <?php $list_services = explode (';', types_render_field( 'def_readyobject', array('raw' => true) ) ); ?>
+            <?php $list_services = explode ('_', types_render_field( 'def_readyobject', array('raw' => true) ) ); ?>
             <?php $list_slider = explode (' ', types_render_field( 'photo_readyobject', array('raw' => true) ) ); ?>
             <?php $video_3d = types_render_field( '3d_readyobject', array('raw' => true) ); ?>
         <div class="elem_project"><a name="<?php echo $header; ?>"></a>

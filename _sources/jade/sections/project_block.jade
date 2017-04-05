@@ -22,6 +22,8 @@ section#projects_block
     .elem_project
         a(name!="<?php echo $header; ?>")
         h4!="<?php the_title(); ?>"
+        h5!="<?php echo $header; ?>"
+        .date!="<?php echo $date; ?>"
         .info
           .slider
             .slider_thumbnail
@@ -51,8 +53,6 @@ section#projects_block
                 img(src!="<?php echo get_template_directory_uri();?>/images/left_arrow.jpg").previous
                 img(src!="<?php echo get_template_directory_uri();?>/images/right_arrow.jpg").next
           ul.text
-            h4!="<?php echo $header; ?>"
-            .date!="<?php echo $date; ?>"
             | <?php foreach( $list_services as $elem): ?>
             li!="<?php echo($elem);?>"
             | <?php endforeach;?>

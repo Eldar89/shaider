@@ -32,7 +32,7 @@
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -61,6 +61,8 @@
             <?php $video_3d = types_render_field( '3d_readyobject', array('raw' => true) ); ?>
         <div class="elem_project"><a name="<?php echo $header; ?>"></a>
           <h4><?php the_title(); ?></h4>
+          <h5><?php echo $header; ?></h5>
+          <div class="date"><?php echo $date; ?></div>
           <div class="info">
             <div class="slider">
               <div class="slider_thumbnail">
@@ -81,9 +83,7 @@
                 <div class="slider_buttons"><img src="<?php echo get_template_directory_uri();?>/images/left_arrow.jpg" class="previous"><img src="<?php echo get_template_directory_uri();?>/images/right_arrow.jpg" class="next"></div>
               </div>
             </div>
-            <ul class="text">
-              <h4><?php echo $header; ?></h4>
-              <div class="date"><?php echo $date; ?></div><?php foreach( $list_services as $elem): ?>
+            <ul class="text"><?php foreach( $list_services as $elem): ?>
               <li><?php echo($elem);?></li><?php endforeach;?>
             </ul>
           </div>
@@ -105,14 +105,14 @@
     <section id="menu" class="fix_menu">
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
           </div>
         </div>
       </footer>
-    </section><a href="#topSite" id="toTop" class="anchor"><img src="<?php echo get_template_directory_uri();?>/images/toTop.png"></a>
+    </section><a href="#topSite" id="toTop" class="anchor topper_button"><img src="<?php echo get_template_directory_uri();?>/images/toTop.png"></a>
     <script>window.projectPage = true</script>
     <script src="<?php echo get_template_directory_uri();?>/libs/jquery/dist/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>

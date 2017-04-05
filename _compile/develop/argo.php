@@ -32,7 +32,7 @@
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -59,15 +59,15 @@
           <div class="info_block_left">
             <h3>Аэрофотосъемка:</h3>
             <ul>
-              <li>мониторинг водных ресурсов;</li>
-              <li>отслеживание уровня вод, паводков и зон затопления;</li>
-              <li>обследование гидротехнических сооружений;</li>
-              <li>оценка запасов лесных ресурсов;</li>
-              <li>обнаружение браконьерских вырубок, сухостоя и заболоченных зон;</li>
-              <li>мониторинг охраняемых территорий;</li>
-              <li>инвентаризация сельскохозяйственных угодий;</li>
-              <li>мониторинг состояния посевов;</li>
-              <li>расчет NDVI</li>
+              <li>Мониторинг водных ресурсов;</li>
+              <li>Отслеживание уровня вод, паводков и зон затопления;</li>
+              <li>Обследование гидротехнических сооружений;</li>
+              <li>Оценка запасов лесных ресурсов;</li>
+              <li>Обнаружение браконьерских вырубок, сухостоя и заболоченных зон;</li>
+              <li>Мониторинг охраняемых территорий;</li>
+              <li>Инвентаризация сельскохозяйственных угодий;</li>
+              <li>Мониторинг состояния посевов;</li>
+              <li>Расчет NDVI.</li>
             </ul>
           </div>
         </div>
@@ -123,7 +123,7 @@
     <section id="menu" class="fix_menu">
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>

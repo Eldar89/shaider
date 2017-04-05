@@ -92,5 +92,9 @@
 
   .text {
     padding-top: 15px;
+
+    ul {
+      list-style-position: outside;
+    }
   }
 }

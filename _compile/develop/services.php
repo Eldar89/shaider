@@ -32,7 +32,7 @@
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -83,9 +83,11 @@
                 <li>Инженерно-геологические изыскания;</li>
                 <li>Гидрогеологические изыскания;</li>
                 <li>Геологическое сопровождение буровых работ;</li>
+              </ul>
+              <ul>
                 <li>Поисково-оценочные, геологоразведочные работы: проектирование и бурение;</li>
                 <li>Геологическая рекогносцировка, разведка, съемка, режимные наблюдения;</li>
-                <li>Бурение скважин различных видов и назначений, в том числе в промышленных помещениях;</li>
+                <li>Бурение скважин различных видов и назначений, в том числе в промышленных помещениях.</li>
               </ul>
             </div>
             <div class="device">
@@ -95,7 +97,7 @@
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/geology/4.jpg"></div>
               </div>
               <div class="slider_elem_inner">
-                <h4>Установка буровая УБШ 01.00.00.000-03</h4>
+                <h4>Установка буровая УБШ 1.13</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/geology/3.jpg"></div>
               </div>
               <div class="slider_elem_inner">
@@ -145,7 +147,7 @@
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/aero/1.png"></div>
               </div>
               <div class="slider_elem_inner">
-                <h4>Геоскан 201</h4>
+                <h4>Беспилотный летательный аппарат GEOSCAN 201</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/aero/2.png"></div>
               </div>
               <div class="slider_elem_inner">
@@ -158,7 +160,7 @@
             <h3>Геофизика</h3>
             <div class="wrap_info">
               <ul>
-                <li>Каротажные работы на ТПИ;</li>
+                <li>Каротажные работы в скважинах на ТПИ;</li>
                 <li>Аэромагниторазведка.</li>
               </ul>
             </div>
@@ -168,11 +170,15 @@
                 <h4>Квадрокоптер GEOSCAN 401</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/aero/3.png"></div>
               </div>
+              <div class="slider_elem_inner">
+                <h4>Установка буровая УБШ 1.13</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/geology/3.jpg"></div>
+              </div>
             </div>
           </div>
           <div class="slider_elem_content">
             <h3>Продажа оборудования</h3>
-            <h4>Наша компания является официальным представителем кмпании Геоскан, что даем нам право на реализацию оборудования выпускаемого данной компанией.</h4>
+            <h4>Наша компания является официальным представителем компании Геоскан, что даем нам право на реализацию оборудования выпускаемого данной компанией.</h4>
             <div class="wrap_info">
               <ul>
                 <li>ГЕОСКАН 101. Компактный  беспилотный летательный аппарат для аэрофотосъемки и 3D моделирования небольших территорий;</li>
@@ -189,13 +195,12 @@
               </ul>
             </div>
             <div class="device">
-              <h3>Используемое оборудование</h3>
               <div class="slider_elem_inner">
                 <h4>Беспилотный летательный аппарат GEOSCAN 101</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/aero/1.png"></div>
               </div>
               <div class="slider_elem_inner">
-                <h4>Геоскан 201</h4>
+                <h4>Беспилотный летательный аппарат GEOSCAN 201</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/aero/2.png"></div>
               </div>
               <div class="slider_elem_inner">
@@ -208,7 +213,7 @@
             <h3>Геодезия, маркшейдерия</h3>
             <div class="wrap_info">
               <ul>
-                <li>Аэрофотосъёмочные, аэрофотогеодезические работы на низких высотах.</li>
+                <li>Аэрофотосъёмочные, аэрофотогеодезические работы на низких высотах;</li>
                 <li>Топографические съемки любых масштабов;</li>
                 <li>Инженерно-геодезическая съемка железных и автомобильных дорог, линий электропередачи, линий связи, магистральных трубопроводов, зданий и сооружений;</li>
                 <li>Выполнение разбивочных работ и исполнительных съемок;</li>
@@ -216,12 +221,12 @@
                 <li>Специальные виды работ при реконструкции и строительстве железнодорожных путей, автомобильных дорог, зданий и сооружений;</li>
                 <li>Камеральное и полевое трассирование линейных объектов;</li>
                 <li>Создание съемочных геодезических сетей разных классов точности;</li>
-                <li>Профильная съемка проводников стволов;</li>
               </ul>
               <ul>
+                <li>Профильная съемка проводников стволов;</li>
                 <li>Проверка шахтных подъемных установок;</li>
                 <li>Подсчет объема подземных выработок;</li>
-                <li>Подсчет объемов вынутой горной массы и контроль ведения открытых горных работ;</li>
+                <li>Подсчет объемов вынутой горной массы и контроль ведения открытых горных пород;</li>
                 <li>Гироскопическое ориентирование;</li>
                 <li>Замеры подготовительных и очистных выработок;</li>
                 <li>Сопровождение и контроль БВР.</li>
@@ -273,11 +278,15 @@
               <ul>
                 <li>Обследование и наблюдение за деформациями бортов уступов и отвалов, отдельных элементов конструкции, зданий (сооружений) в целом;</li>
                 <li>Наблюдение за сдвижением толщи горных пород, земной поверхности;</li>
-                <li>Работы по обеспечению устойчивостью бортов, уступов карьеров и отвалов.</li>
+                <li>Научно-исследовательские работы по мониторингу состояния устойчивости откосов уступов, бортов и отвалов.</li>
               </ul>
             </div>
             <div class="device">
-              <h3>Используемое оборудование</h3>
+              <h3>Используемое ПО и оборудование</h3>
+              <div class="slider_elem_inner">
+                <h4>Установка буровая УБШ 1.13</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/geology/3.jpg"></div>
+              </div>
               <div class="slider_elem_inner">
                 <h4>Беспилотный летательный аппарат GEOSCAN 101</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/aero/1.png"></div>
@@ -294,7 +303,7 @@
               <ul>
                 <li>Обучение по использованию программы «Фотограмметрическая обработка материалов аэрофотосъемочных работ в ПО AgisoftPhotoscan»;</li>
                 <li>Обучающие курсы по управлению и эксплуатации беспилотного летательного аппарата;</li>
-                <li>Внедрение на предприятиях беспилотных аэрофотосъемочных комплексов; Фотограмметрического программного обеспечения и программного обеспечения для визуализации и анализа данных аэрофотосъемки;</li>
+                <li>Внедрение на предприятиях беспилотных аэрофотосъемочных комплексов; фотограмметрического программного обеспечения и программного обеспечения для визуализации и анализа данных аэрофотосъемки;</li>
                 <li>Техническая поддержка беспилотных летательных аппаратов.</li>
               </ul>
             </div>
@@ -322,7 +331,7 @@
     <section id="menu" class="fix_menu">
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>

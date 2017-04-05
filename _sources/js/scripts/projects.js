@@ -27,7 +27,7 @@ export default function () {
 }
 
 function getPosts(markers) {
-  $.get('http://xn--e1aybc.kz/shaider/?json=get_posts&post_type=ready_object', value => {
+  $.get('http://xn--e1aybc.kz/shaider/?json=get_posts&post_type=ready_object&count=-1', value => {
     value.posts.forEach(el => {
       let _coords = el.custom_fields['wpcf-map_readyobject'][0].split(',');
       addMarker(

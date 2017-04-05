@@ -337,7 +337,7 @@
 	};
 
 	function getPosts(markers) {
-	  $.get('http://xn--e1aybc.kz/shaider/?json=get_posts&post_type=ready_object', function (value) {
+	  $.get('http://xn--e1aybc.kz/shaider/?json=get_posts&post_type=ready_object&count=-1', function (value) {
 	    value.posts.forEach(function (el) {
 	      var _coords = el.custom_fields['wpcf-map_readyobject'][0].split(',');
 	      addMarker([+_coords[0], +_coords[1]], el.title, el.custom_fields['wpcf-year_readyobject'][0], 'http://\u0442\u0435\u0441\u0442.kz/shaider/projects/#' + el.custom_fields['wpcf-name_readyobject'], markers);
@@ -396,14 +396,12 @@
 	});
 
 	exports.default = function () {
-	  // click on nav
-	  $('.anchor').on('click', function (e) {
+	  $('.topper_button').on('click', function (e) {
 	    e.preventDefault();
 	    $('html, body').animate({
 	      scrollTop: $('a[name="' + this.hash.slice(1) + '"]').offset().top - 80
 	    }, 1000);
 	  });
-
 	  // Перебор всех слайдеров и инициализация каждого отдельно
 	  [].concat(_toConsumableArray(document.querySelectorAll('#projects_block .elem_project .info .slider'))).forEach(function (el, num) {
 	    var _class = 'slider_thumbnail_' + num,
@@ -431,19 +429,13 @@
 	    });
 
 	    document.querySelector('.' + _class_lent).nextElementSibling.firstElementChild.addEventListener('click', function (e) {
-	      $('.' + _class_lent).slick('slickPrev');
+	      $('.' + _class).slick('slickPrev');
 	      console.log($('.' + _class_lent));
 	    });
 
 	    document.querySelector('.' + _class_lent).nextElementSibling.lastElementChild.addEventListener('click', function (e) {
-	      $('.' + _class_lent).slick('slickNext');
+	      $('.' + _class).slick('slickNext');
 	      console.log($('.' + _class_lent));
-	    });
-	  });
-
-	  [].concat(_toConsumableArray(document.querySelectorAll('#projects_block .slider_elements .next'))).forEach(function (el) {
-	    el.addEventListener('click', function (e) {
-	      $('.slider_lent').slick('slickNext');
 	    });
 	  });
 

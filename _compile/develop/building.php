@@ -32,7 +32,7 @@
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -59,26 +59,26 @@
           <div class="info_block_left">
             <h3>Инженерная геология:</h3>
             <ul>
-              <li>бурение скважин в промышленных помещениях;</li>
-              <li>шнековое и колонковое бурение скважин глубиной до 20-25 м;</li>
-              <li>лабораторные исследования грунта;</li>
-              <li>составление отчетности;</li>
-              <li>штампоопыт;</li>
-              <li>трассирование.</li>
+              <li>Бурение скважин в промышленных помещениях;</li>
+              <li>Шнековое и колонковое бурение скважин глубиной до 20-25 м;</li>
+              <li>Лабораторные исследования грунта;</li>
+              <li>Составление отчетности;</li>
+              <li>Штампоопыт;</li>
+              <li>Трассирование.</li>
             </ul>
             <h3>Геофизические работы:</h3>
             <ul>
-              <li>каротаж скважин;</li>
-              <li>аэрогеофизическая разведка.</li>
+              <li>Каротаж скважин;</li>
+              <li>Аэрогеофизическая разведка.</li>
             </ul>
           </div>
           <div class="info_block_right">
             <h3>Инженерная геодезия:</h3>
             <ul>
-              <li>съемка подземных и наземных инженерных коммуникаций;</li>
-              <li>топографические работы;</li>
-              <li>топографическая съемка в промышленных помещениях;</li>
-              <li>трассирование.</li>
+              <li>Съемка подземных и наземных инженерных коммуникаций;</li>
+              <li>Топографические работы;</li>
+              <li>Топографическая съемка в промышленных помещениях;</li>
+              <li>Трассирование.</li>
             </ul>
           </div>
         </div>
@@ -135,7 +135,7 @@
     <section id="menu" class="fix_menu">
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>

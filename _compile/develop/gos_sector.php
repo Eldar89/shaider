@@ -32,7 +32,7 @@
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -59,12 +59,12 @@
           <div class="info_block_left">
             <h3>Аэрофотосъемка:</h3>
             <ul>
-              <li>создание подробных карт любых масштабов;</li>
-              <li>создание 3d моделей города;</li>
-              <li>контроль целевого использования земельных участков, выявление незаконных построек;</li>
-              <li>обследования ЛЭП и теплотрасс;</li>
-              <li>мониторинг состояния дорожного покрытия;</li>
-              <li>обследование железнодорожного полотна, мостов и других значимых объектов.</li>
+              <li>Создание подробных карт любых масштабов;</li>
+              <li>Создание 3d моделей города;</li>
+              <li>Контроль целевого использования земельных участков, выявление незаконных построек;</li>
+              <li>Обследования ЛЭП и теплотрасс;</li>
+              <li>Мониторинг состояния дорожного покрытия;</li>
+              <li>Обследование железнодорожного полотна, мостов и других значимых объектов.</li>
             </ul>
           </div>
         </div>
@@ -121,7 +121,7 @@
     <section id="menu" class="fix_menu">
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>

@@ -32,7 +32,7 @@
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -59,32 +59,32 @@
           <div class="info_block_left">
             <h3>Проектирование и разработка добычи полезных ископаемых:</h3>
             <ul>
-              <li>разработка проекта;</li>
-              <li>согласование и получение разрешительной документации;</li>
-              <li>согласование экологического раздела;</li>
-              <li>подсчет запасов ГКЗ;</li>
+              <li>Разработка проекта;</li>
+              <li>Согласование и получение разрешительной документации;</li>
+              <li>Согласование экологического раздела;</li>
+              <li>Подсчет запасов ГКЗ.</li>
             </ul>
             <h3>Подземные работы:</h3>
             <ul>
-              <li>профильная съемка проводников;</li>
-              <li>проверка подъемных установок;</li>
-              <li>подсчет объема подземных выработок;</li>
-              <li>гироскопическое ориентирование;</li>
-              <li>передача высотных отметок.</li>
+              <li>Профильная съемка проводников;</li>
+              <li>Проверка подъемных установок;</li>
+              <li>Подсчет объема подземных выработок;</li>
+              <li>Гироскопическое ориентирование;</li>
+              <li>Передача высотных отметок.</li>
             </ul>
           </div>
           <div class="info_block_right">
             <h3>Геофизические работы:</h3>
             <ul>
-              <li>каротажные работы;</li>
-              <li>геофизическая разведка.</li>
+              <li>Каротажные работы;</li>
+              <li>Геофизическая разведка.</li>
             </ul>
             <h3>Маркшейдерия и аэрофотосъемка:</h3>
             <ul>
-              <li>подсчет объемов и мониторинг земляных работ;</li>
-              <li>выявление линейных структур, оценка горизонтальных и вертикальных смещений;</li>
-              <li>наблюдение за устойчивостью бортов карьеров;</li>
-              <li>вынос проекта в натуру.</li>
+              <li>Подсчет объемов и мониторинг земляных работ;</li>
+              <li>Выявление линейных структур, оценка горизонтальных и вертикальных смещений;</li>
+              <li>Наблюдение за устойчивостью бортов карьеров;</li>
+              <li>Вынос проекта в натуру.</li>
             </ul>
           </div>
         </div>
@@ -141,7 +141,7 @@
     <section id="menu" class="fix_menu">
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/" class="anchor">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>

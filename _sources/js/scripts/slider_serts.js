@@ -7,13 +7,13 @@ export default function () {
     arrows: false
   });
 
-  document.querySelector('#serts .arrows .arrow_left')
-    .addEventListener('click', e => {
-      $('.slider_serts').slick('slickPrev');
-    });
-
-    document.querySelector('#serts .arrows .arrow_right')
-      .addEventListener('click', e => {
-        $('.slider_serts').slick('slickNext');
-      });
+  // document.querySelector('#serts .arrows .arrow_left')
+  //   .addEventListener('click', e => {
+  //     $('.slider_serts').slick('slickPrev');
+  //   });
+  //
+  //   document.querySelector('#serts .arrows .arrow_right')
+  //     .addEventListener('click', e => {
+  //       $('.slider_serts').slick('slickNext');
+  //     });
 }

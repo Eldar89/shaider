@@ -228,14 +228,6 @@
     <section id="serts">
       <header>Сертификаты и лицензии</header>
       <div class="container-own">
-        <div class="arrows">
-          <div class="line"></div>
-          <div class="arrows_block">
-            <div class="arrow_left"></div>
-            <div class="arrow_right"></div>
-          </div>
-          <div class="line"></div>
-        </div>
         <div class="slider_serts">
           <?php
            $lastBlog = new WP_Query($args);
@@ -259,14 +251,6 @@
     <section id="team">
       <header>Команда</header>
       <div class="container-own">
-        <div class="arrows">
-          <div class="line"></div>
-          <div class="arrows_block">
-            <div class="arrow_left"></div>
-            <div class="arrow_right"></div>
-          </div>
-          <div class="line"></div>
-        </div>
         <div class="slider_team">
           <?php
            $lastBlog = new WP_Query($args);
@@ -280,12 +264,7 @@
               <?php $team_num = types_render_field( "team_num", array('raw' => true) ); ?>
           <div class="slider_elem"><img src="<?php echo $avatar; ?>" class="avatar">
             <div class="name"><?php echo $name; ?></div>
-            <div class="status">Должность:</div>
             <div class="status_info"><?php echo $def_status; ?></div>
-            <div class="func">Основные функции</div>
-            <div class="func_info"><?php echo $team_func; ?></div>
-            <div class="contact">Контакты</div>
-            <div class="contact_info"><?php echo $team_num; ?></div>
           </div><?php
              endwhile;
            endif;
@@ -341,7 +320,7 @@
     <footer id="footer">
       <div class="container-own">
         <div class="wrap">
-          <h3>«Группа компаний комплексного инжиниринга» — 2017</h3>
+          <h3>Группа компаний комплексного инжиниринга — 2017</h3>
           <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst_green.png" class="insta icon"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook_green.png" class="facebook icon"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk_green.png" class="vk icon"></a></div><a href="http://mindpro-group.com" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/mind_logo.png"></a>
         </div>
       </div>

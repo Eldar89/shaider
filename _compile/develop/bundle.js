@@ -71,14 +71,9 @@
 	} else if (window.servicesPage === true) {
 	  (0, _servicesPage2.default)();
 	}
+
 	//Плавающее меню
 	(0, _floatMenu2.default)();
-	// new FloatMenu({
-	//     elem : document.getElementById('navigation'),
-	//     height : 200,
-	//     first_class : 'menu_fixed_on_top',
-	//     second_class : 'float_menu'
-	//   }).init();
 
 /***/ },
 /* 1 */
@@ -91,6 +86,13 @@
 	});
 
 	exports.default = function () {
+	  //scroll
+	  $(".mCustomScrollbar").mCustomScrollbar({
+	    mouseWheel: {
+	      scrollAmount: 45
+	    }
+	  });
+
 	  // click on nav
 	  $('.anchor').on('click', function (e) {
 	    e.preventDefault();
@@ -262,13 +264,15 @@
 	    arrows: false
 	  });
 
-	  document.querySelector('#serts .arrows .arrow_left').addEventListener('click', function (e) {
-	    $('.slider_serts').slick('slickPrev');
-	  });
-
-	  document.querySelector('#serts .arrows .arrow_right').addEventListener('click', function (e) {
-	    $('.slider_serts').slick('slickNext');
-	  });
+	  // document.querySelector('#serts .arrows .arrow_left')
+	  //   .addEventListener('click', e => {
+	  //     $('.slider_serts').slick('slickPrev');
+	  //   });
+	  //
+	  //   document.querySelector('#serts .arrows .arrow_right')
+	  //     .addEventListener('click', e => {
+	  //       $('.slider_serts').slick('slickNext');
+	  //     });
 	};
 
 /***/ },
@@ -283,20 +287,22 @@
 
 	exports.default = function () {
 	  $('.slider_team').slick({
-	    infinite: true,
-	    slidesToShow: 4,
-	    slidesToScroll: 4,
+	    infinite: false,
+	    slidesToShow: 5,
+	    slidesToScroll: 1,
 	    variableWidth: true,
 	    arrows: false
 	  });
 
-	  document.querySelector('#team .arrows .arrow_left').addEventListener('click', function (e) {
-	    $('.slider_team').slick('slickPrev');
-	  });
-
-	  document.querySelector('#team .arrows .arrow_right').addEventListener('click', function (e) {
-	    $('.slider_team').slick('slickNext');
-	  });
+	  // document.querySelector('#team .arrows .arrow_left')
+	  //   .addEventListener('click', e => {
+	  //     $('.slider_team').slick('slickPrev');
+	  //   });
+	  //
+	  //   document.querySelector('#team .arrows .arrow_right')
+	  //     .addEventListener('click', e => {
+	  //       $('.slider_team').slick('slickNext');
+	  //     });
 	};
 
 /***/ },

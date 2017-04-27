@@ -10,11 +10,6 @@ if (window.mainPage === true) {
 } else if (window.servicesPage === true) {
   servicesPage();
 }
+
 //Плавающее меню
 floatMenu();
-// new FloatMenu({
-//     elem : document.getElementById('navigation'),
-//     height : 200,
-//     first_class : 'menu_fixed_on_top',
-//     second_class : 'float_menu'
-//   }).init();

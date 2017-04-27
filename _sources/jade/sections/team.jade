@@ -9,12 +9,12 @@
 section#team
   header Команда
   .container-own
-    .arrows
-      .line
-      .arrows_block
-        .arrow_left
-        .arrow_right
-      .line
+    //- .arrows
+    //-   .line
+    //-   .arrows_block
+    //-     .arrow_left
+    //-     .arrow_right
+    //-   .line
     .slider_team
       |<?php
       |  $lastBlog = new WP_Query($args);
@@ -29,12 +29,12 @@ section#team
       .slider_elem
         img(src!="<?php echo $avatar; ?>").avatar
         .name!="<?php echo $name; ?>"
-        .status Должность:
+        //- .status Должность:
         .status_info!="<?php echo $def_status; ?>"
-        .func Основные функции
-        .func_info!="<?php echo $team_func; ?>"
-        .contact Контакты
-        .contact_info!="<?php echo $team_num; ?>"
+        //- .func Основные функции
+        //- .func_info!="<?php echo $team_func; ?>"
+        //- .contact Контакты
+        //- .contact_info!="<?php echo $team_num; ?>"
       |<?php
       |    endwhile;
       |  endif;

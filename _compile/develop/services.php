@@ -124,9 +124,9 @@
                 <li>Обследование железнодорожного полотна, мостов и других значимых объектов.</li>
                 <li>Мониторинг водных ресурсов;</li>
                 <li>Цифровая картография;</li>
-                <li>Мониторинг горных работ;</li>
               </ul>
               <ul>
+                <li>Мониторинг горных работ;</li>
                 <li>Сопровождение геологоразведочных работ;</li>
                 <li>Отслеживание уровня вод, паводков и зон затопления;</li>
                 <li>Обследование гидротехнических сооружений;</li>
@@ -174,6 +174,10 @@
                 <h4>Установка буровая УБШ 1.13</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/geology/3.jpg"></div>
               </div>
+              <div class="slider_elem_inner">
+                <h4>Каротажная станция</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/carot.jpg"></div>
+              </div>
             </div>
           </div>
           <div class="slider_elem_content">
@@ -220,9 +224,9 @@
                 <li>Замер и аудит остатков полезного ископаемого на складах;</li>
                 <li>Специальные виды работ при реконструкции и строительстве железнодорожных путей, автомобильных дорог, зданий и сооружений;</li>
                 <li>Камеральное и полевое трассирование линейных объектов;</li>
-                <li>Создание съемочных геодезических сетей разных классов точности;</li>
               </ul>
               <ul>
+                <li>Создание съемочных геодезических сетей разных классов точности;</li>
                 <li>Профильная съемка проводников стволов;</li>
                 <li>Проверка шахтных подъемных установок;</li>
                 <li>Подсчет объема подземных выработок;</li>
@@ -245,6 +249,14 @@
               <div class="slider_elem_inner">
                 <h4>Тахеометр NIKON NIVO 5M</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/mark/4.jpg"></div>
+              </div>
+              <div class="slider_elem_inner">
+                <h4>Геродеодолит Gi - B2</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/ger.jpg"></div>
+              </div>
+              <div class="slider_elem_inner">
+                <h4>Станция профилирования проводников шахтных стволов</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/stan.jpg"></div>
               </div>
               <div class="slider_elem_inner">
                 <h4> Металлоискатель грунтовый GARRETT ACE250</h4>
@@ -278,6 +290,8 @@
               <ul>
                 <li>Обследование и наблюдение за деформациями бортов уступов и отвалов, отдельных элементов конструкции, зданий (сооружений) в целом;</li>
                 <li>Наблюдение за сдвижением толщи горных пород, земной поверхности;</li>
+              </ul>
+              <ul>
                 <li>Научно-исследовательские работы по мониторингу состояния устойчивости откосов уступов, бортов и отвалов.</li>
               </ul>
             </div>
@@ -295,6 +309,18 @@
                 <h4>Комплект R7 GPS приемник база и ровер</h4>
                 <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/services/mark/1.jpg"></div>
               </div>
+              <div class="slider_elem_inner">
+                <h4>ArcGis</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/arcgis.jpg"></div>
+              </div>
+              <div class="slider_elem_inner">
+                <h4>GeoStab</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/geostab.jpg"></div>
+              </div>
+              <div class="slider_elem_inner">
+                <h4>Autocad Civil 3D</h4>
+                <div class="wrap"><img src="<?php echo get_template_directory_uri();?>/images/autocad.jpg"></div>
+              </div>
             </div>
           </div>
           <div class="slider_elem_content">
@@ -303,6 +329,8 @@
               <ul>
                 <li>Обучение по использованию программы «Фотограмметрическая обработка материалов аэрофотосъемочных работ в ПО AgisoftPhotoscan»;</li>
                 <li>Обучающие курсы по управлению и эксплуатации беспилотного летательного аппарата;</li>
+              </ul>
+              <ul>
                 <li>Внедрение на предприятиях беспилотных аэрофотосъемочных комплексов; фотограмметрического программного обеспечения и программного обеспечения для визуализации и анализа данных аэрофотосъемки;</li>
                 <li>Техническая поддержка беспилотных летательных аппаратов.</li>
               </ul>
@@ -346,7 +374,7 @@
     <footer id="footer">
       <div class="container-own">
         <div class="wrap">
-          <h3>«Группа компаний комплексного инжиниринга» — 2017</h3>
+          <h3>Группа компаний комплексного инжиниринга — 2017</h3>
           <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst_green.png" class="insta icon"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook_green.png" class="facebook icon"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk_green.png" class="vk icon"></a></div><a href="http://mindpro-group.com" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/mind_logo.png"></a>
         </div>
       </div>

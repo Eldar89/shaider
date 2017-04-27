@@ -96,7 +96,7 @@
     <footer id="footer">
       <div class="container-own">
         <div class="wrap">
-          <h3>«Группа компаний комплексного инжиниринга» — 2017</h3>
+          <h3>Группа компаний комплексного инжиниринга — 2017</h3>
           <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst_green.png" class="insta icon"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook_green.png" class="facebook icon"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk_green.png" class="vk icon"></a></div><a href="http://mindpro-group.com" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/mind_logo.png"></a>
         </div>
       </div>

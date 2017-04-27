@@ -6,6 +6,13 @@ import ProjectsMap from './scripts/projects'
 import ContactMap from './scripts/map_contact'
 
 export default function () {
+  //scroll
+  $(".mCustomScrollbar").mCustomScrollbar({
+    mouseWheel: {
+      scrollAmount: 45
+    }
+  });
+
   // click on nav
   $('.anchor').on('click', function (e) {
     e.preventDefault();

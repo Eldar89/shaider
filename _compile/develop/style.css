@@ -631,7 +631,6 @@ b {
   justify-content: space-between;
   padding-bottom: 65px; }
   #clients .clients_block img {
-    width: 16%;
     margin: 15px;
     transform: scale(1);
     transition: transform ease 0.3s; }
@@ -946,16 +945,17 @@ b {
     transform: scaleX(1); }
 
 #team .slider_team .slider_elem {
-  width: 291px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 232px;
+  padding-left: 30px;
+  padding-right: 30px;
   position: relative;
   text-align: center; }
   #team .slider_team .slider_elem .avatar {
     border-radius: 50%;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    width: 100%; }
   #team .slider_team .slider_elem .name {
-    color: #77cd9c;
+    color: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
     padding-bottom: 20px; }
@@ -964,14 +964,14 @@ b {
   #team .slider_team .slider_elem .contact {
     font-size: 15px;
     padding-bottom: 13px;
-    color: #fff;
+    color: #77cd9c;
     font-weight: 700; }
   #team .slider_team .slider_elem .status_info,
   #team .slider_team .slider_elem .func_info,
   #team .slider_team .slider_elem .contact_info {
     font-size: 15px;
     padding-bottom: 20px;
-    color: #fff; }
+    color: #77cd9c; }
 
 #map_contact {
   height: 640px;

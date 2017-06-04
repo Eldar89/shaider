@@ -27,14 +27,14 @@ export default function () {
 }
 
 function getPosts(markers) {
-  $.get('http://xn--e1aybc.kz/shaider/?json=get_posts&post_type=ready_object&count=-1', value => {
+  $.get('http://792949.kz/?json=get_posts&post_type=ready_object&count=-1', value => {
     value.posts.forEach(el => {
       let _coords = el.custom_fields['wpcf-map_readyobject'][0].split(',');
       addMarker(
         [+_coords[0], +_coords[1]],
         el.title,
         el.custom_fields['wpcf-year_readyobject'][0],
-        `http://тест.kz/shaider/projects/#${el.custom_fields['wpcf-name_readyobject']}`,
+        `http://792949.kz/projects/#${el.custom_fields['wpcf-name_readyobject']}`,
         markers
       );
     });
@@ -53,7 +53,7 @@ function addMarker(geo, name, year, link, markers) {
   markers.addLayer(
     L.marker(geo, {
       icon: L.icon({
-        iconUrl: 'http://тест.kz/shaider/wp-content/themes/shaider/images/mark_geo_contact.png'
+        iconUrl: 'http://792949.kz/wp-content/themes/shaider/images/mark_geo_contact.png'
       })
     })
     .bindPopup(modalPopup(name, year, link))

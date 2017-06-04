@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -50,11 +50,11 @@
 
 	var _mainPage2 = _interopRequireDefault(_mainPage);
 
-	var _projectPage = __webpack_require__(8);
+	var _projectPage = __webpack_require__(9);
 
 	var _projectPage2 = _interopRequireDefault(_projectPage);
 
-	var _servicesPage = __webpack_require__(9);
+	var _servicesPage = __webpack_require__(10);
 
 	var _servicesPage2 = _interopRequireDefault(_servicesPage);
 
@@ -75,9 +75,9 @@
 	//Плавающее меню
 	(0, _floatMenu2.default)();
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -86,6 +86,10 @@
 	});
 
 	exports.default = function () {
+	  (0, _send_mail.main_send)();
+	  (0, _send_mail.main_send_2)();
+	  (0, _send_mail.main_send_3)();
+	  (0, _send_mail.main_map)();
 	  //scroll
 	  $(".mCustomScrollbar").mCustomScrollbar({
 	    mouseWheel: {
@@ -169,11 +173,13 @@
 
 	var _map_contact2 = _interopRequireDefault(_map_contact);
 
+	var _send_mail = __webpack_require__(8);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -218,9 +224,9 @@
 
 	exports.default = sendForm;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -245,9 +251,9 @@
 	  });
 	};
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -275,9 +281,9 @@
 	  //     });
 	};
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -305,9 +311,9 @@
 	  //     });
 	};
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -343,10 +349,10 @@
 	};
 
 	function getPosts(markers) {
-	  $.get('http://xn--e1aybc.kz/shaider/?json=get_posts&post_type=ready_object&count=-1', function (value) {
+	  $.get('http://792949.kz/?json=get_posts&post_type=ready_object&count=-1', function (value) {
 	    value.posts.forEach(function (el) {
 	      var _coords = el.custom_fields['wpcf-map_readyobject'][0].split(',');
-	      addMarker([+_coords[0], +_coords[1]], el.title, el.custom_fields['wpcf-year_readyobject'][0], 'http://\u0442\u0435\u0441\u0442.kz/shaider/projects/#' + el.custom_fields['wpcf-name_readyobject'], markers);
+	      addMarker([+_coords[0], +_coords[1]], el.title, el.custom_fields['wpcf-year_readyobject'][0], 'http://792949.kz/projects/#' + el.custom_fields['wpcf-name_readyobject'], markers);
 	    });
 	  });
 	}
@@ -358,14 +364,14 @@
 	function addMarker(geo, name, year, link, markers) {
 	  markers.addLayer(L.marker(geo, {
 	    icon: L.icon({
-	      iconUrl: 'http://тест.kz/shaider/wp-content/themes/shaider/images/mark_geo_contact.png'
+	      iconUrl: 'http://792949.kz/wp-content/themes/shaider/images/mark_geo_contact.png'
 	    })
 	  }).bindPopup(modalPopup(name, year, link)).openPopup());
 	}
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -386,14 +392,109 @@
 
 	  mymap.addLayer(L.marker([49.803554, 73.066089], {
 	    icon: L.icon({
-	      iconUrl: 'http://тест.kz/shaider/wp-content/themes/shaider/images/mark_geo_contact.png'
+	      iconUrl: 'http://792949.kz/wp-content/themes/shaider/images/mark_geo_contact.png'
 	    })
 	  }));
 	};
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.main_send = main_send;
+	exports.main_send_2 = main_send_2;
+	exports.main_map = main_map;
+	exports.main_send_3 = main_send_3;
+	function main_send() {
+	  document.querySelector('#main  input[type="submit"]').addEventListener('click', function (e) {
+	    e.preventDefault();
+
+	    var data = {
+	      name: document.querySelector('#main #name_form').value,
+	      email: document.querySelector('#main #email_form').value,
+	      telephone: document.querySelector('#main  #tel_form').value
+	    };
+
+	    send_mail(data);
+	  });
+	}
+
+	function main_send_2() {
+	  document.querySelector('#services  input[type="submit"]').addEventListener('click', function (e) {
+	    e.preventDefault();
+
+	    var data = {
+	      name: document.querySelector('#services #name_form').value,
+	      email: document.querySelector('#services #email_form').value,
+	      telephone: document.querySelector('#services  #tel_form').value
+	    };
+
+	    send_mail(data);
+	  });
+	}
+
+	function main_map() {
+	  document.querySelector('#map_contact input[type="submit"]').addEventListener('click', function (e) {
+	    e.preventDefault();
+
+	    var data = {
+	      name: document.querySelector('#map_contact #name_contact input').value,
+	      telephone: document.querySelector('#map_contact #telephone_contact input').value,
+	      message: document.querySelector('#map_contact #textarea_contact').value
+	    };
+
+	    send_mail(data);
+	  });
+	}
+
+	function main_send_3() {
+	  document.querySelector('#feedback input[type="submit"]').addEventListener('click', function (e) {
+	    e.preventDefault();
+
+	    var data = {
+	      name: document.querySelector('#feedback #name_form').value,
+	      email: document.querySelector('#feedback #email_form').value,
+	      telephone: document.querySelector('#feedback  #tel_form').value
+	    };
+
+	    send_mail(data);
+	  });
+	}
+
+	function send_mail(data) {
+	  $.post('http://792949.kz/wp-content/themes/shaider/mail.php', data).done(function (value) {
+	    var mail = document.querySelector('#mail');
+	    mail.innerHTML = value;
+	    mail.classList.remove('not_visible_mail');
+
+	    setTimeout(function () {
+	      $('#modal_form_feedback').trigger("reset");
+	      mail.classList.add('not_visible_mail');
+	    }, 2000);
+	  });
+	}
+
+	function send_mail_mes(data) {
+	  $.post('http://792949.kz/wp-content/themes/shaider/mail_mes.php', data).done(function (value) {
+	    var mail = document.querySelector('#mail');
+	    mail.innerHTML = value;
+	    mail.classList.remove('not_visible_mail');
+
+	    setTimeout(function () {
+	      $('#modal_form_feedback').trigger("reset");
+	      mail.classList.add('not_visible_mail');
+	    }, 2000);
+	  });
+	}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -456,9 +557,9 @@
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-/***/ },
-/* 9 */
-/***/ function(module, exports) {
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -467,6 +568,8 @@
 	});
 
 	exports.default = function () {
+	  (0, _send_mail.main_send_3)();
+
 	  $('.slider_services').slick({
 	    infinite: false,
 	    slidesToShow: 1,
@@ -487,7 +590,9 @@
 	  });
 	};
 
+	var _send_mail = __webpack_require__(8);
+
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-/***/ }
+/***/ })
 /******/ ]);

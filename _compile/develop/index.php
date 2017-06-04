@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="Keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")-->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
@@ -18,18 +18,24 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.3/MarkerCluster.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.3/MarkerCluster.Default.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css"><!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WBCPWWZ');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body><a name="topSite"></a>
     <section id="menu">
       <header>
         <div class="wrap container-own"><a href="/shaider/"><img src="<?php echo get_template_directory_uri();?>/images/logo.png"></a>
-          <div class="nums"><span>+7 700 <b>600 10 10</b></span><span>+7 700 <b>779 29 49</b></span><span>+7 7212 <b>79 29 49</b></span></div>
+          <div class="nums"><a href="tel:+77006001010"><span>+7 700 <b>600 10 10</b></span></a><a href="tel:+77007792949"><span>+7 700 <b>779 29 49</b></span></a><a href="tel:+77212792949"><span>+7 7212 <b>79 29 49</b></span></a></div>
         </div>
       </header>
       <footer>
         <div class="wrap container-own">
-          <nav><a href="/shaider/">Главная</a><a href="/shaider/services/">Услуги</a><a href="/shaider/projects/">Выполненные работы</a><a href="/shaider/#contact" class="anchor">Контакты</a></nav>
+          <nav><a href="/">Главная</a><a href="/services/">Услуги</a><a href="/projects/">Выполненные работы</a><a href="/#contact" class="anchor">Контакты</a></nav>
           <div class="sal">
             <div class="social"><a href="https://www.instagram.com/geomarksheyderr/" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/inst.png"></a><a href="https://www.facebook.com/profile.php?id=100014247016132" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook.png"></a><a href="https://vk.com/aerofotosemkag" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/vk.png"></a></div>
             <div class="lang"><span class="selected">RU</span><span><a href="#">KZ</a></span><span><a href="#">ENG</a></span></div>
@@ -38,7 +44,7 @@
       </footer>
     </section>
     <section id="main"><a name="main"></a>
-      <video autoplay loop src="<?php echo get_template_directory_uri();?>/bg.mp4"></video>
+      <video autoplay loop muted playsinline src="<?php echo get_template_directory_uri();?>/bg.mp4"></video>
       <div class="shadow"></div>
       <div class="container-own">
         <div class="wrap">
@@ -383,6 +389,9 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.3/leaflet.markercluster.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="<?php echo get_template_directory_uri();?>/bundle.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/bundle.js"></script><!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBCPWWZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>

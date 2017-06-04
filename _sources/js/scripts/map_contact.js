@@ -12,7 +12,7 @@ export default function () {
   mymap.addLayer(
     L.marker([49.803554, 73.066089], {
       icon: L.icon({
-        iconUrl: 'http://тест.kz/shaider/wp-content/themes/shaider/images/mark_geo_contact.png'
+        iconUrl: 'http://792949.kz/wp-content/themes/shaider/images/mark_geo_contact.png'
       })
     }));
 }

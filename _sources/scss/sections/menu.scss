@@ -27,12 +27,14 @@
   padding-right: 110px;
 }
 
-#menu header .nums span {
+#menu header .nums a {
   color: #3b3a3a;
   font-weight: 300;
   font-size: 20px;
   padding-top: 2px;
   padding-bottom: 6px;
+  text-decoration: none;
+  display: block;
 }
 
 #menu footer {

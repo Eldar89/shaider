@@ -4,8 +4,13 @@ import SliderSert from './scripts/slider_serts'
 import SliderTeam from './scripts/slider_team'
 import ProjectsMap from './scripts/projects'
 import ContactMap from './scripts/map_contact'
+import {main_send, main_send_2, main_send_3, main_map} from './scripts/send_mail'
 
 export default function () {
+  main_send();
+  main_send_2();
+  main_send_3();
+  main_map();
   //scroll
   $(".mCustomScrollbar").mCustomScrollbar({
     mouseWheel: {

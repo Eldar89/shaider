@@ -1,4 +1,8 @@
+import {main_send_3} from './scripts/send_mail'
+
 export default function () {
+  main_send_3();
+
   $('.slider_services').slick({
     infinite: false,
     slidesToShow: 1,
